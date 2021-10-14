@@ -6,7 +6,7 @@ entity light is
     SW2, SW1, SW0 : in std_logic;
     LED1, LED0 : out std_logic
     );
-end light
+end light;
   
 architecture behavior of light is 
   
