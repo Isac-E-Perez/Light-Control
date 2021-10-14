@@ -7,7 +7,6 @@ end light_tb;
 architecture behavior of light_tb is
   
 -- component declaration for the Unit Under Test (UUT)
-  
   component light
     port(
         SW2, SW1, SW0 : in std_logic;
