@@ -16,11 +16,7 @@ For this project, I created a logic circuit and used VHDL code to implement the 
 
 <img width="710" alt="Screen Shot 2021-10-13 at 10 26 26 PM" src="https://user-images.githubusercontent.com/89553126/137246017-ad897070-f914-42ee-8c24-5b146fdc528b.png">
 
-LED1 = S̅W̅2̅ S̅W̅1̅ SW0 + S̅W̅2̅ SW1 S̅W̅0̅ + SW2 S̅W̅1̅ S̅W̅0̅
--> LED1 = S̅W̅2̅ (SW1 SW0) + SW2 S̅W̅1̅ S̅W̅0̅
-
-LED0 = S̅W̅2̅ + S̅W̅1̅ + S̅W̅0̅
- 
+<img width="924" alt="Screen Shot 2021-10-13 at 10 41 00 PM" src="https://user-images.githubusercontent.com/89553126/137247470-40370f1f-fe71-4709-b07c-dcbd71f792cc.png">
 ### Note: 
 
 The code is made for the Nexys 4 Artix-7 FPGA Board. I do not have access or own the board so my code is based on the manual specifications found here, https://www.xilinx.com/content/dam/xilinx/support/documentation/university/XUP%20Boards/XUPNexys4DDR/documentation/Nexys4-DDR_rm.pdf 
