@@ -21,5 +21,5 @@ begin
   x <= not(A) and (B xor C);
   y <= A and (not(B) and not(C));
   LED1 <= x or y;
-  LED0 <= not(A) or not(B) or not(C);
+  LED0 <= not (A and B and C);
 end behavior; 
