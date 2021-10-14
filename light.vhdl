@@ -13,8 +13,7 @@ architecture behavior of light is
   signal A, B, C : std_logic;
   signal x, y, f : std_logic;
 
-begin  
-  
+begin
   A <= SW2;
   B <= SW1;
   C <= SW0;
@@ -23,5 +22,4 @@ begin
   y <= A and (not(B) and not(C));
   LED1 <= x or y;
   LED0 <= not(A) or not(B) or not(C);
-
-end; 
+end behavior; 
