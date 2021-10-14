@@ -2,7 +2,7 @@
 
 ### About:
 
-For this project, I created a logic circuit and used VHDL code to implement the following circuit whose outputs is LED0 and LED1. There are three switches available. I want LED1 **ON** when only one of the switches is in the **ON** position. I want LED0 **ON** only when the three switches are in the **ON** position.
+For this project, I created a logic circuit and used VHDL code to implement the following circuit whose outputs is *LED0* and *LED1*. There are three switches available. I want LED1 **ON** when only one of the switches is in the **ON** position. I want LED0 **ON** only when the three switches are in the **ON** position.
 
 **Digital Design Simulation**
 
