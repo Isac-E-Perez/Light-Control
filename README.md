@@ -43,7 +43,6 @@ The entity block has no input or output singals going into or out of the '*testb
 
 Finally, I verified the units outputted by using a waveform viewer. 
 
-Looking back to the ***about*** section of ***logic*** conditions, I produce what should be expected therefore, I know my light code is logically correct.
 
 ![1](https://user-images.githubusercontent.com/89553126/137387999-eb119852-69d9-4aa2-b70e-16d21c190cb6.PNG)
 
@@ -62,3 +61,5 @@ Looking back to the ***about*** section of ***logic*** conditions, I produce wha
 ![8](https://user-images.githubusercontent.com/89553126/137388043-9b3409b0-fd08-427e-80f6-d5dfa2727f1a.PNG)
 
 ![9](https://user-images.githubusercontent.com/89553126/137388049-fde73679-a47e-40c2-aba0-9db35cba5253.PNG)
+
+Looking back to the ***about*** section of ***logic*** conditions, I produce what should be expected therefore, I know my light code is logically correct. The simulation also confirms that the logic is correct.
