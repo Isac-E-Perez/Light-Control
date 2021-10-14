@@ -41,3 +41,4 @@ Afterwards, I worked on the behavioral (functional) simulation. Here, I will onl
 
 The entity block has no input or output singals going into or out of the '*testbench*', which makes sense since '*testbench*' is a complete unit. The '*testbench*' will go ahead and send the signals to the logic circuit in which it will read back those signals. Afterwards, I could check out whether these signals are correct. Therefore, I don't need anything going into or out of the testbench. Additionally, a process was created so that I could deliver signals sequentially and not concurrenlty.
 
+Finally, I verified the units outputted by using a waveform viewer. 
