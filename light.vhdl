@@ -24,4 +24,4 @@ begin
   LED1 <= x or y;
   LED0 <= not(A) or not(B) or not(C);
 
-end behavior; 
+end; 
