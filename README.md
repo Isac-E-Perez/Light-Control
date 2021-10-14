@@ -2,7 +2,10 @@
 
 ### About:
 
+
 <img width="1104" alt="Screen Shot 2021-10-13 at 8 45 15 PM" src="https://user-images.githubusercontent.com/89553126/137236650-3151c64f-7216-4118-b9b8-c063fa3a50ca.png">
+
+<img width="381" alt="Screen Shot 2021-10-13 at 9 15 07 PM" src="https://user-images.githubusercontent.com/89553126/137239320-33a83e1a-da2a-49a7-a29c-dfa05bfeedf7.png">
 
 
 ### Note: 
