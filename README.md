@@ -43,13 +43,22 @@ The entity block has no input or output singals going into or out of the '*testb
 
 Finally, I verified the units outputted by using a waveform viewer. 
 
-Looking back to the ***about*** section of ***logic*** conditions, I produce what should be expected therefore, I know my light code is logically correct.  
+Looking back to the ***about*** section of ***logic*** conditions, I produce what should be expected therefore, I know my light code is logically correct.
+
 ![1](https://user-images.githubusercontent.com/89553126/137387999-eb119852-69d9-4aa2-b70e-16d21c190cb6.PNG)
+
 ![2](https://user-images.githubusercontent.com/89553126/137388005-c946dd9b-5777-4569-9dfd-b1c6a8d51162.PNG)
+
 ![3](https://user-images.githubusercontent.com/89553126/137388011-2a264208-2ea8-4bdd-bf0c-7f3babc1597d.PNG)
+
 ![4](https://user-images.githubusercontent.com/89553126/137388016-ff62f57a-14b8-4353-ab1e-e37fbc3be47f.PNG)
+
 ![5](https://user-images.githubusercontent.com/89553126/137388021-1522810c-bde2-45c5-863b-39762c0382a0.PNG)
+
 ![6](https://user-images.githubusercontent.com/89553126/137388025-f9b8fe76-4a7e-43b3-9ab3-379775462140.PNG)
+
 ![7](https://user-images.githubusercontent.com/89553126/137388036-76d93cd1-95b0-454b-be1b-731f764c92c6.PNG)
+
 ![8](https://user-images.githubusercontent.com/89553126/137388043-9b3409b0-fd08-427e-80f6-d5dfa2727f1a.PNG)
+
 ![9](https://user-images.githubusercontent.com/89553126/137388049-fde73679-a47e-40c2-aba0-9db35cba5253.PNG)
