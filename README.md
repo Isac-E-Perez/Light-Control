@@ -43,4 +43,4 @@ The entity block has no input or output singals going into or out of the '*testb
 
 Finally, I verified the units outputted by using a waveform viewer. 
 
-Looking back to the *about* section of *logic* conditions, I produce what should be expected therefore, I know my light code is logically correct.  
+Looking back to the ***about*** section of ***logic*** conditions, I produce what should be expected therefore, I know my light code is logically correct.  
