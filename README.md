@@ -7,6 +7,8 @@
 
 <img width="381" alt="Screen Shot 2021-10-13 at 9 15 07 PM" src="https://user-images.githubusercontent.com/89553126/137239320-33a83e1a-da2a-49a7-a29c-dfa05bfeedf7.png">
 
+<img width="581" alt="Screen Shot 2021-10-13 at 10 24 16 PM" src="https://user-images.githubusercontent.com/89553126/137245747-ed76b6bd-90b6-4742-8191-c26dafbe4597.png">
+
 
 ### Note: 
 
