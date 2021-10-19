@@ -12,7 +12,7 @@ For this project, I created a logic circuit and used VHDL code to implement the 
 
 <img width="381" alt="Screen Shot 2021-10-13 at 9 15 07 PM" src="https://user-images.githubusercontent.com/89553126/137239320-33a83e1a-da2a-49a7-a29c-dfa05bfeedf7.png">
 
-**The logic**
+**Karnaugh map**
 
 <img width="710" alt="Screen Shot 2021-10-13 at 10 26 26 PM" src="https://user-images.githubusercontent.com/89553126/137246017-ad897070-f914-42ee-8c24-5b146fdc528b.png">
 
@@ -81,4 +81,4 @@ Finally, I verified the units outputted by using a waveform viewer.
 
 ![9](https://user-images.githubusercontent.com/89553126/137388049-fde73679-a47e-40c2-aba0-9db35cba5253.PNG)
 
-Looking back to the ***about*** section of ***logic*** conditions, the code produce what should be expected therefore, I know my light code is logically correct. The simulation also confirms that the logic is correct.
+Looking back to the Karnaugh map, the code produce what should be expected therefore, I know my light code is logically correct. The simulation also confirms that the logic is correct.
