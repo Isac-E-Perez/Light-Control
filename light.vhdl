@@ -10,8 +10,8 @@ end light;
   
 architecture behavior of light is 
   
-  signal A, B, C : std_logic;
-  signal x, y, f : std_logic;
+  signal A, B, C : std_logic; -- intermediate signals
+  signal x, y, f : std_logic; -- intermediate signals
 
 begin
   A <= SW2;
