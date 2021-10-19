@@ -81,4 +81,4 @@ Finally, I verified the units outputted by using a waveform viewer.
 
 ![9](https://user-images.githubusercontent.com/89553126/137388049-fde73679-a47e-40c2-aba0-9db35cba5253.PNG)
 
-Looking back to the Karnaugh map, the code produce what should be expected therefore, I know my light code is logically correct. The simulation also confirms that the logic is correct.
+Looking back to the Karnaugh map, the code produce what should be expected, therefore, I know my light code is logically correct. The simulation also confirms that the logic is correct.
