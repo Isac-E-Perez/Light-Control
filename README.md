@@ -33,6 +33,8 @@ In VHDL, *SW2*, *SW1* and *SW0* are inputs (**IN**), *LED1* and *LED0* are outpu
 
 <img width="251" alt="Screen Shot 2021-10-14 at 2 47 44 PM" src="https://user-images.githubusercontent.com/89553126/137385587-f7a083ed-4406-4f2a-b337-67e7557300a3.png">
 
+Although the use of intermediate signals is not mandatory, the tool was used in my VDHL model. The idea here is that I am trying to describe a digital circuit using a textual desirption language: I will often need to use intermediate signals in order to accomplish my goal of modeling the circuit.
+
 Afterwards, I worked on the behavioral (functional) simulation. Here, I will only verify the logical operation of the circuit. Stimuli is provided to the logic circuit, so I can verify the outputs behave as I expect. The VHDL file called '*light_tb*' is where I specified the stimuli to the logic circuit.
 
 <img width="406" alt="Screen Shot 2021-10-14 at 2 49 05 PM" src="https://user-images.githubusercontent.com/89553126/137385769-248d03d8-dde6-46cf-9d73-13d94cd8ade1.png">
