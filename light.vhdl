@@ -11,7 +11,7 @@ end light;
 architecture behavior of light is 
   
   -- The intermediate signals must be declared within the body of the architecture 
-  --because they have no link to the outside world and thus do not appear in the entity declaration.
+  -- because they have no link to the outside world and thus do not appear in the entity declaration.
   signal A, B, C : std_logic; -- intermediate signals
   signal x, y, f : std_logic; -- intermediate signals
 
