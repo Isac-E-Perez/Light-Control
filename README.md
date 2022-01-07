@@ -27,19 +27,95 @@ In VHDL, *SW2*, *SW1* and *SW0* are inputs (**IN**), *LED1* and *LED0* are outpu
 
 **I/O's are specified here (the circuit is specified using a Hardware Desciption Language)**
 
-<img width="251" alt="Screen Shot 2021-10-14 at 2 46 00 PM" src="https://user-images.githubusercontent.com/89553126/137385350-6c67ec95-4072-4002-a190-6eae8f722de1.png">
+```VHDL
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity light is 
+  port(
+    SW2, SW1, SW0 : in std_logic;
+    LED1, LED0 : out std_logic
+    );
+end light;
+```
 
 **Internal description of the logic circuit is specified here**
 
-![Screen Shot 2021-10-19 at 9 02 04 AM](https://user-images.githubusercontent.com/89553126/137926040-d56d5b4c-d05e-4a5e-b24d-0b742124474b.png)
+```VHDL
+architecture behavior of light is 
+  
+  -- The intermediate signals must be declared within the body of the architecture 
+  -- because they have no link to the outside world and thus do not appear in the entity declaration.
+  signal A, B, C : std_logic; -- intermediate signals
+  signal x, y, f : std_logic; -- intermediate signals
+
+begin
+  A <= SW2;
+  B <= SW1;
+  C <= SW0;
+
+  x <= not(A) and (B xor C);
+  y <= A and (not(B) and not(C));
+  LED1 <= x or y;
+  LED0 <= not (A and B and C);
+end behavior; 
+```
  
 Although the use of intermediate signals is not mandatory, the tool was used in my VDHL model. The idea here is that I am trying to describe a digital circuit using a textual description language: I will often need to use intermediate signals in order to accomplish my goal of modeling the circuit. The use of intermediate signals allows me to more easily model digital circuits without making the generated hardware more complicated.
 
 Afterwards, I worked on the behavioral (functional) simulation. Here, I will only verify the logical operation of the circuit. Stimuli is provided to the logic circuit, so I can verify the outputs behave as I expect. The VHDL file called '*light_tb*' is where I specified the stimuli to the logic circuit.
 
-<img width="406" alt="Screen Shot 2021-10-14 at 2 49 05 PM" src="https://user-images.githubusercontent.com/89553126/137385769-248d03d8-dde6-46cf-9d73-13d94cd8ade1.png">
+```VHDL
+library ieee;
+use ieee.std_logic_1164.all;
 
-<img width="584" alt="Screen Shot 2021-10-14 at 2 49 24 PM" src="https://user-images.githubusercontent.com/89553126/137385779-7e372571-abae-46a0-8815-86f2d1f28660.png">
+entity light_tb is 
+end light_tb;
+  
+architecture behavior of light_tb is
+  
+-- component declaration for the Unit Under Test (UUT)
+  component light
+    port(
+        SW2, SW1, SW0 : in std_logic;
+        LED1, LED0 : out std_logic
+        );
+  end component;
+  
+-- Input
+signal SW2 : std_logic := '0';
+signal SW1 : std_logic := '0';
+signal SW0 : std_logic := '0';
+
+-- Output
+signal LED1 : std_logic;
+signal LED0 : std_logic;
+
+begin 
+-- Instantiate the Unit Under Test (UUT)
+  uut : light port map (SW2=>SW2, SW1=>SW1, SW0=>SW0, LED1=>LED1, LED0=>LED0);
+    
+-- Stimulus process
+    stim_proc: process
+    begin
+      wait for 100 ns; -- hold reset state for 100 ns
+      
+      -- Stimuli:
+		SW2 <= '0'; SW1 <= '0'; SW0 <= '0'; wait for 20 ns;
+		SW2 <= '0'; SW1 <= '0'; SW0 <= '1'; wait for 20 ns;
+		SW2 <= '0'; SW1 <= '1'; SW0 <= '0'; wait for 20 ns;
+		SW2 <= '0'; SW1 <= '1'; SW0 <= '1'; wait for 20 ns;
+		SW2 <= '1'; SW1 <= '0'; SW0 <= '0'; wait for 20 ns;
+		SW2 <= '1'; SW1 <= '0'; SW0 <= '1'; wait for 20 ns;
+		SW2 <= '1'; SW1 <= '1'; SW0 <= '0'; wait for 20 ns;
+		SW2 <= '1'; SW1 <= '1'; SW0 <= '1'; wait for 20 ns;
+		SW2 <= '0'; SW1 <= '0'; SW0 <= '0';
+
+    assert false report "Reached end of test";
+    wait;
+  end process;
+end behavior;
+```
 
 The entity block has no input or output singals going into or out of the '*testbench*', which makes sense since '*testbench*' is a complete unit. The '*testbench*' will go ahead and send the signals to the logic circuit in which it will read back those signals. Afterwards, I could check out whether these signals are correct. Therefore, I don't need anything going into or out of the testbench. Additionally, the process statement is a concurrent statement which is constituted of sequential statements exclusively.
 
